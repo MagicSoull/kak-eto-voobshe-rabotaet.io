@@ -1,0 +1,239 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F3.bp.blogspot.com%2F-s4VmNWoOQmE%2FVplwEpy3czI%2FAAAAAAAAHk8%2FrCsJY0kT0P8%2Fs1600%2Fstars3.gif&f=1&nofb=1&ipt=49dbaeeee76bc99e0f254bcfef2c21fc661ab2d526a82943446d52fb6373f464&ipo=images);
+}
+html{
+    scroll-behavior: smooth;
+}
+.header{
+    display: flex;
+    gap: 15px;
+    background-color: rgb(53, 53, 53);
+}
+.title{
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 150px;
+    margin-left: 60px;
+    font-weight: bold;
+    width: 20ch;
+    border-right: 4px solid rgb(0, 0, 0);
+    animation: flashing-border 0.75s ease infinite,
+    printed-text 5s steps(20);
+}
+@keyframes flashing-border{
+    0%{
+        border-color: rgb(0, 0, 0);
+    }
+    50%{
+        border-color: transparent;
+    }
+    100%{
+        border-color: rgb(0, 0, 0);
+    }
+}
+
+@keyframes printed-text{
+    from{
+        width: 0;
+    }
+}
+.logo{
+    display: flex;
+    gap: 20px;
+    justify-content: left;  
+    color: white;
+    width: 100%;
+    padding: 2%;
+    margin-left: 50px;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+.spisok{
+    display: flex;
+    justify-content: right;
+    margin-right: 100px;
+    width: 1000px;
+    margin-top: 40px;
+    color: white;
+}
+main{
+    margin-top: 10px;
+    height: 400px;
+    background-image: url(img/1703101546156lmumaldb.png);
+    background-position: center center;
+    left: -30%;
+    background-size: cover;
+    padding: 3%;
+    height: 500px;
+} 
+main h1{
+    color: white;
+}
+.img-up{
+    width: 100px;
+    height: 100px;
+}
+.img{
+    display: flex;
+    gap: 60px;
+    margin-top: 60px;
+    justify-content: left;
+    margin-left: 70px;
+}
+main h1{
+    display: flex;
+    margin-left: 90px;
+}
+.main{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(53, 53, 53);
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.top{
+    display: flex;
+    justify-content: center;
+    gap: 800px;
+    margin-top: 50px;
+}
+.img-top{
+    display: flex;
+    height: 200px;
+    width: 200px;
+}
+.one{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+.two{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding-bottom: 5px;
+}
+.selection{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 85%;
+
+}
+.btn{
+    display: flex;
+    padding: 5px;
+    width: 10%;
+    height: 10%;
+    justify-content: center;
+    text-align:center;
+    color: black;
+    text-decoration: none;
+    font-size: 28px;
+    text-transform: uppercase;
+    position: relative;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+svg rect{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: black;
+    stroke-width: 5px;
+    stroke-dasharray: 10px 170px 20px 30px 20px 170px 20px 30px ;
+    transition: .5s all;
+}
+
+.btn:hover rect{
+    stroke-dasharray: 200px 0 70px 0 200px 0 70px 0;
+}
+.my-work{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(53, 53, 53);
+    height: 190px;
+
+}
+.my-work h1{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    color: white;
+}
+.my-work p{
+    color: white;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+footer{
+    display: flex;
+    margin-top: 30px;
+    background-color: rgb(53, 53, 53);
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 15px;
+    margin-top: 30px;
+    justify-content: center;
+    margin-left: 765px; 
+}
+.contact label{
+    color: white;
+    justify-content: center;
+    display: flex;
+}
+selection h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.input{
+    display: flex;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px;
+}
+.input-big{
+    padding-bottom: 100px;
+    border-radius: 5px;
+    border: 1px;
+}
+button{
+    height: 25px;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #000;
+    color: white;
+}
+button :hover{
+    background: white;
+    color: #000;
+}
